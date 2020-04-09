@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+</head>
+<body>
+	<table width="500" height="300" border="1" cellpadding="20" cellspacing="0" align="center">
+		<caption><h3>个人简介</h3></caption>
+	     <tr> 
+	     	<td>刘德华</td> 
+	     	<td>男</td> 
+	     	<td>20</td> 
+	     	<!-- 目标单元格 先上后下 第一行的第四个 -->
+	     	<td rowspan="2">照片</td>
+	     </tr>	
+	     <tr> 
+	     	<td>身高</td> 
+	     	<td>汉族</td> 
+	     	<td>已婚 </td>
+	     	<!-- 第二行第四个单元格是多余的   -->
+	     	<!-- <td>照片</td> -->
+	     </tr>	
+	     <tr> 
+	     	<td>个人作品</td> 
+	     	<td colspan="3">个人作品</td>
+	     	<!-- 将第三行三列合并，第二个是目标单元格，第三个和第四个是多余的  -->
+	     	<!-- <td>个人作品</td> -->
+	     	<!-- <td>个人作品</td> -->
+	     </tr>
+	     <tr> 
+	     	<td>个人简介</td> 
+	     	<td colspan="3">个人简介</td>
+	     </tr>
+	</table>
+</body>
+</html>
